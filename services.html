@@ -28,21 +28,34 @@
         justify-content: center;
         gap: 2rem;
         width: 1140px;
-        height: 100vh;
+        height: 100%;
       }
       .card {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
         padding: 1rem;
-        height: 63.3%;
-        border: 2px solid;
+        height: 100%;
+        border: 1px solid;
         border-radius: 10px;
         border-radius: 9px;
       }
       .card:hover {
         border-radius: 10px;
-        box-shadow: 18px 18px 25px #ffffff, -18px -18px 25px #d8d8d8;
+        box-shadow: 1px 1px 2px #01723b, -10px -10px 5px #d8d8d8;
       }
       .card img {
+        margin: 0 auto;
+        width: 313px;
+        height: 218px;
         border-radius: 5px;
+      }
+      .card p {
+        width: 300px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
       }
       .card button {
         width: 100%;
@@ -51,7 +64,7 @@
         box-shadow: none;
         background-color: white;
         border-color: #01723b;
-        text-overflow: none;
+        text-overflow: none;J
         color: #01723b;
       }
       .card button:hover {
@@ -66,7 +79,7 @@
         <!-- card 1 -->
         <div class="card">
           <img
-            src="https://mh.baitsbd.com/wp-content/uploads/2024/05/B16.png"
+            src="https://mh.baitsbd.com/wp-content/uploads/2024/05/1-2.png"
             alt=""
           />
           <h2>Fire Safety and Fire Protection Solutions</h2>
@@ -78,27 +91,58 @@
         </div>
         <!-- card 2 -->
         <div class="card">
-          <img src="./Images/2.png" alt="" />
-          <h2>Fire Safety and Fire Protection Solutions</h2>
+          <img
+            src="https://mh.baitsbd.com/wp-content/uploads/2024/05/2-2.png"
+            alt=""
+          />
+          <h2>
+            CCTV Surveillance <br />
+            Systems
+          </h2>
           <p>
-            At BAITS, we provide top-notch Fire Safety and Fire Protection
-            Solutions tailored to meet your needs. From expert consultations and
-            cutting-edge fire protection systems to comprehensive training and
-            maintenance, we’ve got you covered. Trust our experienced team to
-            safeguard your property and ensure the safety of your occupants.
+            At Bangladesh Associate of IT Solution (BAITS), we understand the
+            importance of maintaining a secure environment for your business and
+            home. Our state-of-the-art CCTV Surveillance Systems are designed to
+            provide you with peace of mind by ensuring constant vigilance and
+            protection.
           </p>
           <button>Learn More</button>
         </div>
         <!-- card 3 -->
         <div class="card">
-          <img src="./Images/3.png" alt="" />
-          <h2>Fire Safety and Fire Protection Solutions</h2>
+          <img
+            src="https://mh.baitsbd.com/wp-content/uploads/2024/05/7.png"
+            alt=""
+          />
+          <h2>
+            Time Attendance <br />
+            Systems
+          </h2>
           <p>
-            At BAITS, we provide top-notch Fire Safety and Fire Protection
-            Solutions tailored to meet your needs. From expert consultations and
-            cutting-edge fire protection systems to comprehensive training and
-            maintenance, we’ve got you covered. Trust our experienced team to
-            safeguard your property and ensure the safety of your occupants.
+            BAITS provides cutting-edge Access Control and Time Attendance
+            Systems to enhance security and efficiency. Our solutions offer
+            seamless access management and accurate time tracking, ensuring a
+            safe and productive environment. Trust BAITS to optimize your
+            security and workforce management.
+          </p>
+          <button>Learn More</button>
+        </div>
+        <!--card 4-->
+        <div class="card">
+          <img
+            src="https://mh.baitsbd.com/wp-content/uploads/2024/05/7.png"
+            alt=""
+          />
+          <h2>
+            Time Attendance <br />
+            Systems
+          </h2>
+          <p>
+            BAITS provides cutting-edge Access Control and Time Attendance
+            Systems to enhance security and efficiency. Our solutions offer
+            seamless access management and accurate time tracking, ensuring a
+            safe and productive environment. Trust BAITS to optimize your
+            security and workforce management.
           </p>
           <button>Learn More</button>
         </div>
