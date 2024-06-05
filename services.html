@@ -17,7 +17,7 @@
         background-color: white;
         padding: 0.1rem;
       }
-      .main_contyainer {
+      .main_container {
         width: 100%;
         height: 100%;
       }
@@ -25,7 +25,6 @@
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
         gap: 2rem;
         width: 1140px;
         height: 100%;
@@ -33,7 +32,7 @@
       .card {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        /* gap: 1rem; */
         padding: 1rem;
         height: 100%;
         border: 1px solid;
@@ -64,17 +63,28 @@
         box-shadow: none;
         background-color: white;
         border-color: #01723b;
-        text-overflow: none;J
+        text-overflow: none;
         color: #01723b;
       }
       .card button:hover {
         background-color: #01723b;
         color: white;
       }
+      @media screen and (max-width: 320px) {
+       .card_container {
+        width: 320px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 1rem;
+        /*height: 100%;*/
+        /*overflow: hidden;*/
+      }
     </style>
   </head>
   <body>
-    <div class="container" class="main_contyainer">
+    <div class="main_container">
       <div class="card_container">
         <!-- card 1 -->
         <div class="card">
