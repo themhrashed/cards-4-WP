@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer Example</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+      body {
+        font-family: "Inter", sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 18px; /* Increase base font size */
+      }
+
+      .footer {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 40px 0;
+        position: relative;
+      }
+
+      .footer-container {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .footer-section {
+        flex: 1;
+        min-width: 250px;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .footer-section h2 {
+        color: #01723b;
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 20px; /* Increase heading font size */
+        position: relative;
+      }
+
+      .footer-section p,
+      .footer-section a {
+        color: #ffffff;
+        margin-bottom: 10px;
+        line-height: 1.6;
+        font-size: 18px; /* Increase paragraph and link font size */
+      }
+
+      .footer-section a {
+        color: #01723b;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 5px;
+        position: relative;
+      }
+
+      .footer-section a:hover {
+        color: #ffffff;
+      }
+
+      .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        border-top: 1px solid #333;
+        padding-top: 20px;
+        margin-top: 20px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .footer-bottom p {
+        margin: 0;
+        font-size: 18px; /* Increase bottom text font size */
+      }
+
+      .social-links a {
+        color: #01723b;
+        text-decoration: none;
+        margin-right: 10px;
+        font-size: 18px; /* Increase social links font size */
+      }
+
+      .social-links a:hover {
+        color: #ffffff;
+      }
+
+      .shape-divider {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        overflow: hidden;
+        line-height: 0;
+      }
+
+      .shape-divider svg {
+        position: relative;
+        display: block;
+        width: calc(120% + 1.3px);
+        height: 100px;
+      }
+
+      .shape-divider .shape-fill {
+        fill: #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <footer class="footer">
+      <div class="shape-divider">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39 56.97C220.12 96.72 108.21 123.16 0 87.07V0h1200v113.99c-153.64 27.68-297.6 54.29-469.14 18.33C608.17 97.19 521.11 50.34 321.39 56.97z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            imperdiet, nulla et dictum interdum, nisi lorem egestas odio.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h2>Quick Links</h2>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-section">
+          <h2>Contact Us</h2>
+          <p>Address: 123 Main Street, Anytown, USA</p>
+          <p>Phone: (123) 456-7890</p>
+          <p>Email: info@example.com</p>
+        </div>
+      </div>
+      <div class="footer-container footer-bottom">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
